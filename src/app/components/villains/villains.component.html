@@ -1,4 +1,4 @@
-<h1>Heroes <small>Marvel y DC </small></h1>
+<h1>Villanos <small>Marvel y DC </small></h1>
 <hr />
 
 <div class="card-columns">
@@ -6,7 +6,7 @@
     class="card animated fadeIn fast"
     *ngFor="let heros of hero; let idx = index"
   >
-    <ng-container *ngIf="heros.tipo == 1">
+    <ng-container *ngIf="heros.tipo == 2">
       <!-- <img src="{{heros.img}}" class="card-img-top" alt="{{heros.nombre}}"> -->
       <img [src]="heros.img" class="card-img-top" [alt]="heros.nombre" />
       <div class="card-body">
@@ -23,7 +23,7 @@
           Ver mas...
         </button>
         <a
-          [routerLink]="['/detalles', idx]"
+          [routerLink]="['/detalles2', idx]"
           class="btn btn-outline-primary btn-block"
         >
           Ver mas ...</a

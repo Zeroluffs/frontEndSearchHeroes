@@ -17,6 +17,8 @@ import { APP_ROUTING } from './app.routes';
 import { HeroService } from './service/hero.service';
 import { HeroDetailsComponent } from './components/hero-details/hero-details.component';
 import { SearchHeroeComponent } from './components/search-heroe/search-heroe.component';
+import { VillainsComponent } from './components/villains/villains.component';
+import { VillainDetailsComponent } from './components/villain-details/villain-details.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { SearchHeroeComponent } from './components/search-heroe/search-heroe.com
     HeroesComponent,
     AboutComponent,
     HeroDetailsComponent,
-    SearchHeroeComponent    
+    SearchHeroeComponent,
+    VillainsComponent,
+    VillainDetailsComponent    
   ],
   imports: [
     BrowserModule,
